@@ -7,6 +7,7 @@
 body{
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 .header{
@@ -21,24 +22,21 @@ body{
 .header__flex-wrapper{
 	margin-right: -30px;
 	margin-left:  -30px;
-	border:  1px solid green;
 }
 
 .header__flex-inner{
 	margin-right: 30px;
 	margin-left: 30px;
-	border:1px solid blue;
 }
 
 .header__inner{
 	display: flex;
+
 	max-width: 1440px;
 	width: 100%;
 	height: 100%;
 	padding-right: 135px; 
 	padding-left: 135px;
-	border: 1px solid red;
-
 }
 
 .header__logo-wrapper{
@@ -47,7 +45,6 @@ body{
 	display: inline-block;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	
 }
 
 .header__logo-img{
@@ -84,6 +81,10 @@ body{
 	width: 100%;
 }
 
+.search-form__input::placeholder {
+	color: rgba(187, 196, 214, 1);
+}
+
 .header__user-wrapper{
 	display: flex;
 	align-items: center;
@@ -115,15 +116,76 @@ body{
 }
 
 
+.header__mini-user-icon{
+	display: none;
+}
+
+.header__search-form-mini{
+	display: none;
+}
+
 @media screen and (max-width: 768px){
 	.header__inner{
-		padding-left:  20px;
-		padding-right: 0px;
+		padding-right: 0;
+		padding-left: 0;
 	}
 	.header__flex-inner{
-
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+	.header{
+		margin-right: -10px;
+		margin-left: -10px;
 	}
 } 
+
+@media screen and (max-width: 512px){
+	.header{
+		height: 60px;
+		border-bottom: 1px solid rgba(187, 196, 214, 0.5);
+		box-shadow: none;
+	}
+	.header__search-form{
+		display: none;
+	}
+	.header__vertical-line{
+		display: none;
+	}
+	.header__username{
+		display: none;
+	}
+	.header__user-avatar{
+		display: none;
+	}
+	.header__mini-user-icon{
+		display: inline-block;
+		height: 14px;
+		margin-right: 5px;
+	}	
+	.header__logo-wrapper{
+		height: calc(100% - 32px);
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	.mini-user-icon{
+		height: 18px;
+		width: auto;
+	}
+	.header__search-form-mini{
+		height: 40px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+		font-size: 14px;
+		color: rgba(187, 196, 214, 1);
+		margin-left: 5px; 
+	}
+	.search-form__input::placeholder {
+		font-family: 'Montserrat', sans-serif;
+		color: #BBC4D6;
+	}
+}
 
 
 

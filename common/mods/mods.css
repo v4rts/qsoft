@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-.text{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.text-roboto{
 	font-family: 'Roboto', sans-serif;
+}
+
+.text-montserrat{
+	font-family: 'Montserrat', sans-serif;
 }
 
