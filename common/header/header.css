@@ -21,11 +21,13 @@ body{
 .header__flex-wrapper{
 	margin-right: -30px;
 	margin-left:  -30px;
+	border:  1px solid green;
 }
 
 .header__flex-inner{
 	margin-right: 30px;
 	margin-left: 30px;
+	border:1px solid blue;
 }
 
 .header__inner{
@@ -35,6 +37,7 @@ body{
 	height: 100%;
 	padding-right: 135px; 
 	padding-left: 135px;
+	border: 1px solid red;
 
 }
 
@@ -112,7 +115,15 @@ body{
 }
 
 
+@media screen and (max-width: 768px){
+	.header__inner{
+		padding-left:  20px;
+		padding-right: 0px;
+	}
+	.header__flex-inner{
 
+	}
+} 
 
 
 
